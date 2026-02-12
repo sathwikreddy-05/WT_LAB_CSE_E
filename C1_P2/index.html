@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adaptive Landing Page</title>
+
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+	<!-- Header -->
+	<header class="bg-red-400 text-white text-center p-5">
+		<h1 class="text-3xl font-bold">Welcome to Our Service</h1>
+		<p id="deviceType" class="mt-2"></p>
+	</header>
+
+	<!-- Main Content -->
+	<main class="p-5">
+
+		<!-- Hero Section -->
+		<section id="hero" class="text-center mb-6 md:text-left">
+			<h2 id="heroTitle" class="text-2xl md:text-4xl font-semibold mb-2">
+				Discover Our Solutions
+			</h2>
+			<p id="heroDescription" class="text-lg">
+				We provide top-notch solutions tailored to your needs.
+			</p>
+		</section>
+
+		<!-- Features Section -->
+		<section id="features" class="mb-6">
+			<h2 class="text-2xl font-semibold mb-4">Features</h2>
+			<div id="featureList" class="flex flex-wrap gap-4">
+				<!-- Features inserted by JavaScript -->
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact">
+			<h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+			<p class="mb-4">Get in touch with us for more information.</p>
+
+			<form id="contactForm" class="flex flex-col gap-3 max-w-md">
+				<label>Name:</label>
+				<input type="text" required
+					class="p-2 border rounded">
+
+				<label>Email:</label>
+				<input type="email" required
+					class="p-2 border rounded">
+
+				<label>Message:</label>
+				<textarea rows="4" required
+					class="p-2 border rounded"></textarea>
+
+				<button type="submit"
+					class="bg-red-400 text-white p-2 rounded hover:bg-red-700">
+					Send Message
+				</button>
+			</form>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white text-center p-3 mt-6">
+		<p>&copy; 2024 Our Service</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
